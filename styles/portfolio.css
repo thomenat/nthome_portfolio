@@ -1,15 +1,41 @@
 :root {
-   
+   --bg-gradient: radial-gradient(circle, #4a50ed, #4157e1, #3e5cd3, #3f5fc4, #4462b5, #3e5ca2, #3b558e, #384e7b, #2b3e60, #1f2e46, #161f2d, #0a0f16);
+    --primary-h1-color: #b0c2ff;
+    --font:'Satoshi', sans-serif;
+    --text-color-gradient: linear-gradient(to right top, #a6b6f6, #9dc2fc, #99ceff, #99d8ff, #9ee2ff);
 }
 
 body {
-    background-color: aqua;
-    font-family: 'Satoshi', sans-serif;
+    font-family: var(--font);
+    background: var(--bg-gradient);
 }
 
+.navbar {
+   background: var(--bg-gradient);
+    
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+}
 
 h1 {
-    
-    font-weight: 700;
+    background-image: var(--text-color-gradient);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    color: var(--primary-h1-color);
+    font-weight: 900;
     text-align: center;
+    text-size-adjust: 16px;
+    font-family: var(--font);
+
 }
+
+h2 {
+    font-family: var(--font);
+    color: var(--text-color-gradient);
+}
+
